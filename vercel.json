@@ -1,5 +1,7 @@
 {
   "rewrites": [
+    { "source": "/openai/meta", "destination": "/openai/meta" },
+    { "source": "/openai/image", "destination": "/openai/image" },
     { "source": "/(.*)", "destination": "/" }
   ]
 }
