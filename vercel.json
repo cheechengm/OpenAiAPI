@@ -1,7 +1,6 @@
 {
-  "rewrites": [
-    { "source": "/openai/meta", "destination": "/openai/meta" },
-    { "source": "/openai/image", "destination": "/openai/image" },
-    { "source": "/(.*)", "destination": "/" }
-  ]
+   "routes": [
+    { "src": "/openai/meta", "methods": ["POST"], "dest": "/app.js" },
+    { "src": "/openai/image", "methods": ["POST"], "dest": "/app.js" },
+    { "src": "/(.*)", "dest": "/app.js" }
 }
