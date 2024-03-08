@@ -1,11 +1,8 @@
 {
-  "rewrites": [
-    { "source": "/openai/meta", "destination": "/openai/meta" },
-    { "source": "/openai/image", "destination": "/openai/image" },
-    { "source": "/(.*)", "destination": "/" }
-  ],
   "routes": [
+    { "handle": "filesystem" },
     { "src": "/openai/meta", "methods": ["POST"], "dest": "/openai/meta" },
-    { "src": "/openai/image", "methods": ["POST"], "dest": "/openai/image" }
+    { "src": "/openai/image", "methods": ["POST"], "dest": "/openai/image" },
+    { "src": "/(.*)", "dest": "/index.js" }
   ]
 }
