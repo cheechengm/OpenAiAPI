@@ -1,9 +1,11 @@
 {
   "rewrites": [
+    { "source": "/openai/meta", "destination": "/openai/meta", "method": "POST" },
+    { "source": "/openai/image", "destination": "/openai/image", "method": "POST" },
     { "source": "/(.*)", "destination": "/app.js" }
   ],
   "functions": {
-    "/controllers/openaiController.js": {
+    "api/*.js": {
       "memory": 3009,
       "maxDuration": 30
     }
