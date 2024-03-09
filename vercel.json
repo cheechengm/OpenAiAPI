@@ -3,11 +3,13 @@
     { "source": "/(.*)", "destination": "/app.js" }
   ],
   "functions": {
-    "/openai/meta": {
-      "runtime": "nodejs18.x"
+    "/controllers/openaiController.generateMeta": {
+      "memory": 3009,
+      "maxDuration": 30
     },
-    "/openai/image": {
-      "runtime": "nodejs18.x"
+    "/controllers/openaiController.generateImage": {
+      "memory": 3009,
+      "maxDuration": 30
     }
   }
 }
