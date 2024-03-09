@@ -3,11 +3,7 @@
     { "source": "/(.*)", "destination": "/app.js" }
   ],
   "functions": {
-    "/controllers/openaiController.generateMeta": {
-      "memory": 3009,
-      "maxDuration": 30
-    },
-    "/controllers/openaiController.generateImage": {
+    "/controllers/openaiController.js": {
       "memory": 3009,
       "maxDuration": 30
     }
