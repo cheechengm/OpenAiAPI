@@ -1,7 +1,23 @@
 {
-  "rewrites": [
-    { "source": "/openai/meta", "destination": "/openai/meta" },
-    { "source": "/openai/image", "destination": "/openai/image" },
-    { "source": "/(.*)", "destination": "/app.js" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/openai/meta",
+      "dest": "/app.js"
+    },
+    {
+      "src": "/openai/image",
+      "dest": "/app.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/app.js"
+    }
   ]
 }
