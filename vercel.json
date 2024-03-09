@@ -1,16 +1,7 @@
 {
-  "routes": [
-    {
-      "src": "/openai/meta",
-      "dest": "/app.js"
-    },
-    {
-      "src": "/openai/image",
-      "dest": "/app.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/app.js"
-    }
+  "rewrites": [
+    { "source": "/openai/meta", "destination": "/api/generateMeta" },
+    { "source": "/openai/image", "destination": "/api/generateImage" },
+    { "source": "/(.*)", "destination": "/app.js" }
   ]
 }
