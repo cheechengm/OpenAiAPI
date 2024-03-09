@@ -1,7 +1,15 @@
 {
   "rewrites": [
-    { "source": "/openai/meta", "destination": "/controllers/openaiController/generateMeta" },
-    { "source": "/openai/image", "destination": "/controllers/openaiController/generateImage" },
     { "source": "/(.*)", "destination": "/app.js" }
-  ]
+  ],
+  "functions": {
+    "/openai/meta": {
+      "handler": "/controllers/openaiController",
+      "runtime": "nodejs18.x"
+    },
+    "/openai/image": {
+      "handler": "/controllers/openaiController",
+      "runtime": "nodejs18.x"
+    }
+  }
 }
