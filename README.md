@@ -1,5 +1,5 @@
 Welcome this code will allows you to use openapi to generate contents for youtube video as well as thumbnail using text prompts:
-This is created using OPENAI API, node.js, express.js. Currently im working on hosting it on vercel.
+This is created using OPENAI API, node.js, express.js. 
 
 ![image](https://github.com/cheechengm/OpenAiAPI/assets/122721995/ca18d169-a3df-4ae4-8db6-04ba54a1ac0b)
 
